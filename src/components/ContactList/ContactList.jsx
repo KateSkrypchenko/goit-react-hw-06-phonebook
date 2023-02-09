@@ -18,7 +18,6 @@ export const ContactList = () => {
 
   const visibleContacts = filterContactItem();
 
-  console.log(contacts);
   return (
     <List>
       {visibleContacts.map(({ id, name, number }) => (

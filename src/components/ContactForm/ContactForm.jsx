@@ -7,7 +7,6 @@ import { Label, Input, Form, Button, IconBtn } from './ContactForm.styled';
 
 export const ContactForm = () => {
   const contacts = useSelector(getContacts);
-
   const dispatch = useDispatch();
 
   const handleSubmit = event => {
