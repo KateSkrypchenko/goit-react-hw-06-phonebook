@@ -18,10 +18,10 @@ export const ContactForm = () => {
     );
     if (!isIncludesName) {
       dispatch(addContacts(name, number));
+      event.target.reset();
     } else {
       alert(`${name} is already in contacts`);
     }
-    event.target.reset();
   };
 
   return (
